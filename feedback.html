@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback | WebLearn</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🌐 WebLearn</div>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+
+        <h1>Share Your Feedback</h1>
+
+        <p>
+            Your feedback helps us improve the WebLearn learning portal.
+        </p>
+
+        <form id="feedbackForm">
+
+            <input 
+                type="text" 
+                id="name" 
+                placeholder="Enter your name" 
+                required
+            >
+
+            <input 
+                type="email" 
+                id="feedbackEmail" 
+                placeholder="Enter your email" 
+                required
+            >
+
+            <select id="rating" required>
+                <option value="">Rate Your Experience</option>
+                <option value="5">Excellent ⭐⭐⭐⭐⭐</option>
+                <option value="4">Very Good ⭐⭐⭐⭐</option>
+                <option value="3">Good ⭐⭐⭐</option>
+                <option value="2">Average ⭐⭐</option>
+                <option value="1">Poor ⭐</option>
+            </select>
+
+            <textarea 
+                id="message" 
+                placeholder="Write your feedback here..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebLearn | Web Technology Learning Portal</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit 2 Notes | WebLearn</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🌐 WebLearn</div>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="notes.html" class="active">Notes</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Unit Header -->
+    <section class="unit-header">
+
+        <p class="small-title">WEB TECHNOLOGY - UNIT 2</p>
+
+        <h1>Web Page Technologies</h1>
+
+        <p>
+            Complete notes on HTML elements, CSS, Dynamic HTML,
+            JavaScript and XML technologies.
+        </p>
+
+        <a href="notes.html" class="back-btn">← Back to All Units</a>
+
+    </section>
+
+
+    <!-- Notes Content -->
+    <main class="notes-content">
+
+
+        <!-- Topic 1 -->
+        <article class="topic-section">
+
+            <h2>1. HTML Lists</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                Lists are used in HTML to organize related information in a
+                structured and readable format. They are commonly used to
+                display menus, steps, features and collections of items.
+            </p>
+
+            <h3>Types of Lists</h3>
+
+            <ul>
+                <li><strong>Ordered List:</strong> Displays items in a numbered sequence.</li>
+                <li><strong>Unordered List:</strong> Displays items using bullet points.</li>
+                <li><strong>Description List:</strong> Used to display terms and their descriptions.</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;ol&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+
+            <div class="example-box">
+                <p>
+                    Ordered lists are useful when the order of items is important,
+                    while unordered lists are useful for general collections.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 2 -->
+        <article class="topic-section">
+
+            <h2>2. HTML Tables</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                HTML tables are used to display data in rows and columns.
+                Tables are useful for presenting structured information such
+                as marks, schedules, product details and reports.
+            </p>
+
+            <h3>Important Table Tags</h3>
+
+            <ul>
+                <li><strong>&lt;table&gt;</strong> – Creates a table.</li>
+                <li><strong>&lt;tr&gt;</strong> – Creates a table row.</li>
+                <li><strong>&lt;th&gt;</strong> – Creates a table heading.</li>
+                <li><strong>&lt;td&gt;</strong> – Creates a data cell.</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Subject&lt;/th&gt;
+        &lt;th&gt;Marks&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Web Technology&lt;/td&gt;
+        &lt;td&gt;85&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+
+        </article>
+
+
+        <!-- Topic 3 -->
+        <article class="topic-section">
+
+            <h2>3. Images in HTML</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                Images make web pages more attractive and help communicate
+                information visually. HTML uses the <strong>&lt;img&gt;</strong>
+                element to display an image.
+            </p>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;img src="image.jpg" alt="Sample Image"&gt;
+            </pre>
+
+            <h3>Important Attributes</h3>
+
+            <ul>
+                <li><strong>src:</strong> Specifies the location of the image.</li>
+                <li><strong>alt:</strong> Provides alternative text for the image.</li>
+                <li><strong>width and height:</strong> Control image dimensions.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 4 -->
+        <article class="topic-section">
+
+            <h2>4. HTML Forms</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                HTML forms are used to collect information from users. Forms
+                are commonly used for login pages, registration pages, search
+                boxes and feedback forms.
+            </p>
+
+            <h3>Common Form Elements</h3>
+
+            <ul>
+                <li>Text input</li>
+                <li>Password input</li>
+                <li>Radio buttons</li>
+                <li>Checkboxes</li>
+                <li>Dropdown lists</li>
+                <li>Submit buttons</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;form&gt;
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text" placeholder="Enter your name"&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+
+            <div class="example-box">
+                <p>
+                    Forms allow users to interact with a website by entering
+                    and submitting information.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 5 -->
+        <article class="topic-section">
+
+            <h2>5. HTML Frames</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                Frames were used to divide a browser window into multiple
+                sections, where each section could display a different HTML
+                document.
+            </p>
+
+            <p>
+                Traditional HTML frames are now considered outdated in modern
+                web development. However, the concept is important for
+                understanding the history of web technologies.
+            </p>
+
+            <h3>Iframe</h3>
+
+            <p>
+                An iframe is an HTML element that can embed another web page
+                or document inside the current web page.
+            </p>
+
+            <pre class="code-box">
+&lt;iframe src="page.html"&gt;&lt;/iframe&gt;
+            </pre>
+
+        </article>
+
+
+        <!-- Topic 6 -->
+        <article class="topic-section">
+
+            <h2>6. Dynamic HTML and JavaScript</h2>
+
+            <h3>What is Dynamic HTML?</h3>
+
+            <p>
+                Dynamic HTML, commonly called DHTML, is a combination of HTML,
+                CSS and JavaScript used to create interactive and dynamic web
+                pages.
+            </p>
+
+            <h3>Role of Technologies</h3>
+
+            <ul>
+                <li><strong>HTML:</strong> Provides the structure of the page.</li>
+                <li><strong>CSS:</strong> Controls the appearance and design.</li>
+                <li><strong>JavaScript:</strong> Adds behavior and interactivity.</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;button onclick="showMessage()"&gt;
+    Click Me
+&lt;/button&gt;
+
+&lt;script&gt;
+function showMessage() {
+    alert("Welcome to Web Technology!");
+}
+&lt;/script&gt;
+            </pre>
+
+        </article>
+
+
+        <!-- Topic 7 -->
+        <article class="topic-section">
+
+            <h2>7. CSS</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                CSS stands for Cascading Style Sheets. It is used to control
+                the appearance and layout of HTML elements.
+            </p>
+
+            <p>
+                CSS can change colors, fonts, spacing, borders and the overall
+                layout of a web page.
+            </p>
+
+            <h3>Basic CSS Syntax</h3>
+
+            <pre class="code-box">
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+            </pre>
+
+            <h3>Types of CSS</h3>
+
+            <ul>
+                <li><strong>Inline CSS:</strong> Written directly inside an HTML element.</li>
+                <li><strong>Internal CSS:</strong> Written inside a style tag.</li>
+                <li><strong>External CSS:</strong> Written in a separate CSS file.</li>
+            </ul>
+
+            <div class="example-box">
+                <p>
+                    External CSS is useful because one stylesheet can control
+                    the design of multiple web pages.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 8 -->
+        <article class="topic-section">
+
+            <h2>8. Document Type Definition (DTD)</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                DTD stands for Document Type Definition. It defines the
+                structure and allowed elements of an XML document.
+            </p>
+
+            <p>
+                A DTD helps ensure that an XML document follows a specific
+                format and contains valid elements.
+            </p>
+
+            <h3>Example</h3>
+
+            <pre class="code-box">
+&lt;!DOCTYPE student [
+    &lt;!ELEMENT student (name, course)&gt;
+    &lt;!ELEMENT name (#PCDATA)&gt;
+    &lt;!ELEMENT course (#PCDATA)&gt;
+]&gt;
+            </pre>
+
+        </article>
+
+
+        <!-- Topic 9 -->
+        <article class="topic-section">
+
+            <h2>9. XML Schemas</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                XML Schema is used to define the structure and data rules of
+                an XML document. It can specify which elements and attributes
+                are allowed and what type of data they can contain.
+            </p>
+
+            <h3>Advantages</h3>
+
+            <ul>
+                <li>Defines the structure of XML data.</li>
+                <li>Supports different data types.</li>
+                <li>Helps validate XML documents.</li>
+                <li>Provides more detailed rules than basic DTD.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 10 -->
+        <article class="topic-section">
+
+            <h2>10. Object Models</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                An object model represents the elements and structure of a
+                document as objects. Programs can use these objects to access
+                and modify document content.
+            </p>
+
+            <p>
+                In web development, the Document Object Model, or DOM,
+                represents an HTML or XML document as a tree of objects.
+            </p>
+
+            <div class="example-box">
+                <h3>Simple Example</h3>
+                <p>
+                    JavaScript can use the DOM to find an HTML element and
+                    change its text, style or content.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 11 -->
+        <article class="topic-section">
+
+            <h2>11. Presenting XML</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                XML is mainly designed to store and exchange data. To present
+                XML data in a user-friendly format, additional technologies
+                can be used to transform or style the information.
+            </p>
+
+            <p>
+                XML data can be processed and converted into formats that are
+                easier for users to read, such as HTML.
+            </p>
+
+            <h3>Uses</h3>
+
+            <ul>
+                <li>Displaying structured data on web pages.</li>
+                <li>Exchanging information between applications.</li>
+                <li>Transforming XML data into other formats.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 12 -->
+        <article class="topic-section">
+
+            <h2>12. XML Processors: DOM and SAX</h2>
+
+            <h3>DOM Parser</h3>
+
+            <p>
+                The DOM parser reads an entire XML document and creates a tree
+                structure in memory. Programs can move through the tree and
+                access or modify different parts of the document.
+            </p>
+
+            <h3>SAX Parser</h3>
+
+            <p>
+                SAX stands for Simple API for XML. A SAX parser reads an XML
+                document step by step and generates events when it finds
+                different parts of the document.
+            </p>
+
+            <h3>DOM vs SAX</h3>
+
+            <ul>
+                <li><strong>DOM:</strong> Loads the complete document into memory.</li>
+                <li><strong>SAX:</strong> Processes the document sequentially.</li>
+                <li><strong>DOM:</strong> Useful when the document needs to be modified.</li>
+                <li><strong>SAX:</strong> Useful for processing large XML documents efficiently.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Summary -->
+        <article class="summary-section">
+
+            <h2>📌 Unit 2 Summary</h2>
+
+            <p>
+                Unit 2 introduces important technologies used to create modern
+                web pages. HTML provides elements such as lists, tables,
+                images and forms for structuring content.
+            </p>
+
+            <p>
+                CSS controls the design of web pages, while JavaScript helps
+                create interactive and dynamic content. XML technologies,
+                including DTD, XML Schema, DOM and SAX, are useful for
+                representing, validating and processing structured data.
+            </p>
+
+        </article>
+
+
+        <!-- Important Questions -->
+        <article class="important-questions">
+
+            <h2>📝 Important Questions</h2>
+
+            <ol>
+                <li>Explain the different types of HTML lists.</li>
+                <li>Explain the structure and uses of HTML tables.</li>
+                <li>How are images added to an HTML document?</li>
+                <li>What are HTML forms? Explain common form elements.</li>
+                <li>What are frames and iframes?</li>
+                <li>Explain Dynamic HTML and the role of JavaScript.</li>
+                <li>What is CSS? Explain the types of CSS.</li>
+                <li>What is Document Type Definition (DTD)?</li>
+                <li>Explain XML Schema and its advantages.</li>
+                <li>What is the Document Object Model?</li>
+                <li>Explain DOM and SAX XML processors.</li>
+            </ol>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebLearn | Web Technology Learning Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

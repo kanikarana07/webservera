@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit 1 Notes | WebLearn</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">🌐 WebLearn</div>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="notes.html" class="active">Notes</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Unit Header -->
+    <section class="unit-header">
+
+        <p class="small-title">WEB TECHNOLOGY - UNIT 1</p>
+
+        <h1>Internet & Web Basics</h1>
+
+        <p>
+            Complete notes on the Internet, World Wide Web, web protocols,
+            DNS, web browsers and web servers.
+        </p>
+
+        <a href="notes.html" class="back-btn">← Back to All Units</a>
+
+    </section>
+
+
+    <!-- Notes Content -->
+    <main class="notes-content">
+
+
+        <!-- Topic 1 -->
+        <article class="topic-section">
+
+            <h2>1. History of the Internet</h2>
+
+            <h3>Introduction</h3>
+
+            <p>
+                The Internet is one of the most important technologies of the
+                modern world. It is a global network that connects millions of
+                computers and other devices. Through the Internet, people can
+                communicate, share information, study, shop and access many
+                online services.
+            </p>
+
+            <p>
+                The development of the Internet started as a research project.
+                Over time, computer networks became more advanced and different
+                networks were connected together. This led to the development of
+                the global Internet that we use today.
+            </p>
+
+            <h3>Important Development</h3>
+
+            <ul>
+                <li>Early computer networks were developed for communication and research.</li>
+                <li>ARPANET was one of the early computer networks.</li>
+                <li>TCP/IP helped different computer networks communicate with each other.</li>
+                <li>The World Wide Web made information easier to access through web pages.</li>
+                <li>Today, the Internet connects computers, mobile phones, servers and smart devices.</li>
+            </ul>
+
+            <div class="example-box">
+                <h3>Simple Example</h3>
+                <p>
+                    When you send a message using an online application, your
+                    device uses the Internet to communicate with another device
+                    or server located somewhere else in the world.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 2 -->
+        <article class="topic-section">
+
+            <h2>2. World Wide Web (WWW)</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                The World Wide Web, commonly called the Web or WWW, is a system
+                of web pages and resources that can be accessed through the
+                Internet. Users access websites using web browsers.
+            </p>
+
+            <p>
+                The Internet and the World Wide Web are not exactly the same.
+                The Internet is the global network infrastructure, while the
+                World Wide Web is a service that uses the Internet to provide
+                web pages and information.
+            </p>
+
+            <h3>How the WWW Works</h3>
+
+            <p>
+                A user enters a website address in a web browser. The browser
+                sends a request to the web server. The server processes the
+                request and sends the required web page back to the browser.
+                The browser then displays the page to the user.
+            </p>
+
+            <div class="example-box">
+                <h3>Working Process</h3>
+                <p>
+                    User → Web Browser → Internet → Web Server → Response → Web Browser
+                </p>
+            </div>
+
+            <h3>Main Components of WWW</h3>
+
+            <ul>
+                <li>Web Pages</li>
+                <li>Websites</li>
+                <li>Web Browsers</li>
+                <li>Web Servers</li>
+                <li>URLs</li>
+                <li>HTTP and HTTPS protocols</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 3 -->
+        <article class="topic-section">
+
+            <h2>3. HTML</h2>
+
+            <h3>Introduction to HTML</h3>
+
+            <p>
+                HTML stands for HyperText Markup Language. It is the standard
+                markup language used to create and structure web pages. HTML
+                tells the browser what content should appear on a web page.
+            </p>
+
+            <p>
+                HTML uses elements and tags to organize content. Headings,
+                paragraphs, images, links and tables can all be added to a web
+                page using HTML.
+            </p>
+
+            <h3>Basic HTML Structure</h3>
+
+            <pre class="code-box">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Welcome to WebLearn&lt;/h1&gt;
+    &lt;p&gt;This is a simple web page.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+            </pre>
+
+            <h3>Common HTML Tags</h3>
+
+            <ul>
+                <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> – Used for headings.</li>
+                <li><strong>&lt;p&gt;</strong> – Used for paragraphs.</li>
+                <li><strong>&lt;a&gt;</strong> – Used to create links.</li>
+                <li><strong>&lt;img&gt;</strong> – Used to display images.</li>
+                <li><strong>&lt;ul&gt; and &lt;ol&gt;</strong> – Used to create lists.</li>
+                <li><strong>&lt;table&gt;</strong> – Used to create tables.</li>
+                <li><strong>&lt;form&gt;</strong> – Used to collect user information.</li>
+            </ul>
+
+            <div class="example-box">
+                <h3>Important Point</h3>
+                <p>
+                    HTML provides the structure of a web page. CSS is generally
+                    used for design and styling, while JavaScript is used to add
+                    interactivity.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 4 -->
+        <article class="topic-section">
+
+            <h2>4. HTTP Protocol</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                HTTP stands for HyperText Transfer Protocol. It is a protocol
+                used for communication between a web browser and a web server.
+                It defines how requests and responses are exchanged on the Web.
+            </p>
+
+            <h3>How HTTP Works</h3>
+
+            <p>
+                When a user opens a website, the browser sends an HTTP request
+                to the server. The server receives the request, processes it
+                and sends an HTTP response containing the requested resource.
+            </p>
+
+            <div class="example-box">
+                <h3>HTTP Request and Response</h3>
+                <p>
+                    Browser: "Please send me the home page."<br>
+                    Server: "Here is the requested web page."
+                </p>
+            </div>
+
+            <h3>Common HTTP Methods</h3>
+
+            <ul>
+                <li><strong>GET:</strong> Used to request data from a server.</li>
+                <li><strong>POST:</strong> Used to send data to a server.</li>
+                <li><strong>PUT:</strong> Used to update information.</li>
+                <li><strong>DELETE:</strong> Used to remove information.</li>
+            </ul>
+
+            <h3>HTTPS</h3>
+
+            <p>
+                HTTPS stands for HyperText Transfer Protocol Secure. It is a
+                secure version of HTTP that protects data exchanged between the
+                browser and the server.
+            </p>
+
+        </article>
+
+
+        <!-- Topic 5 -->
+        <article class="topic-section">
+
+            <h2>5. SMTP Protocol</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                SMTP stands for Simple Mail Transfer Protocol. It is mainly
+                used for sending electronic mail from one system to another.
+            </p>
+
+            <p>
+                When a user sends an email, SMTP helps transfer the outgoing
+                message from the sender's mail application to a mail server.
+                The message can then be transferred to the receiver's mail
+                server.
+            </p>
+
+            <div class="example-box">
+                <h3>Simple Flow</h3>
+                <p>
+                    Sender → Mail Application → SMTP Server → Receiver's Mail Server
+                </p>
+            </div>
+
+            <h3>Main Use</h3>
+
+            <ul>
+                <li>Sending emails</li>
+                <li>Transferring outgoing email messages</li>
+                <li>Communication between mail servers</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 6 -->
+        <article class="topic-section">
+
+            <h2>6. POP3 Protocol</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                POP3 stands for Post Office Protocol Version 3. It is an email
+                protocol used by an email client to receive messages from a
+                mail server.
+            </p>
+
+            <p>
+                POP3 generally downloads emails from the server to the user's
+                device. This allows the user to access downloaded messages from
+                the local device.
+            </p>
+
+            <h3>Important Points</h3>
+
+            <ul>
+                <li>POP3 is mainly used for receiving emails.</li>
+                <li>It downloads messages from a mail server.</li>
+                <li>It is useful when a user wants local access to messages.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 7 -->
+        <article class="topic-section">
+
+            <h2>7. MIME</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                MIME stands for Multipurpose Internet Mail Extensions. It is a
+                standard that allows email messages to contain different types
+                of content in addition to simple text.
+            </p>
+
+            <p>
+                With MIME, an email can include images, documents, audio,
+                video and other file types as attachments.
+            </p>
+
+            <h3>Uses of MIME</h3>
+
+            <ul>
+                <li>Sending file attachments through email.</li>
+                <li>Identifying different types of content.</li>
+                <li>Supporting multimedia content in Internet communication.</li>
+            </ul>
+
+            <div class="example-box">
+                <h3>Example</h3>
+                <p>
+                    When you attach a PDF or image to an email, MIME helps
+                    identify and transfer that type of content.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 8 -->
+        <article class="topic-section">
+
+            <h2>8. IMAP</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                IMAP stands for Internet Message Access Protocol. It is used
+                by email applications to access and manage messages stored on
+                a mail server.
+            </p>
+
+            <p>
+                Unlike traditional downloading approaches, IMAP allows users to
+                access their email while keeping messages organized on the
+                server. This can make it easier to use the same email account
+                on multiple devices.
+            </p>
+
+            <h3>POP3 and IMAP</h3>
+
+            <ul>
+                <li>POP3 mainly downloads email messages to a device.</li>
+                <li>IMAP focuses on accessing and managing messages on the server.</li>
+                <li>IMAP is useful for accessing the same mailbox from multiple devices.</li>
+            </ul>
+
+        </article>
+
+
+        <!-- Topic 9 -->
+        <article class="topic-section">
+
+            <h2>9. Domain Name System (DNS)</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                DNS stands for Domain Name System. It helps convert human-readable
+                domain names into IP addresses that computers use for
+                communication.
+            </p>
+
+            <p>
+                People find it easier to remember a name such as
+                <strong>www.example.com</strong> than a numerical IP address.
+                DNS works like an Internet directory that helps locate the
+                correct server.
+            </p>
+
+            <h3>How DNS Works</h3>
+
+            <ol>
+                <li>The user enters a domain name in the browser.</li>
+                <li>The system looks for the corresponding IP address.</li>
+                <li>DNS provides the IP address of the required server.</li>
+                <li>The browser connects to that server.</li>
+                <li>The requested website is returned to the browser.</li>
+            </ol>
+
+            <div class="example-box">
+                <h3>Simple Example</h3>
+                <p>
+                    Domain Name: www.example.com → DNS → IP Address → Web Server
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 10 -->
+        <article class="topic-section">
+
+            <h2>10. Web Browsers</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                A web browser is a software application used to access,
+                retrieve and display information from the World Wide Web.
+                It allows users to open websites and interact with web pages.
+            </p>
+
+            <h3>Main Functions of a Web Browser</h3>
+
+            <ul>
+                <li>Sending requests to web servers.</li>
+                <li>Receiving web pages and other resources.</li>
+                <li>Displaying HTML content.</li>
+                <li>Applying CSS styles to web pages.</li>
+                <li>Running JavaScript code.</li>
+                <li>Allowing users to navigate between websites.</li>
+            </ul>
+
+            <div class="example-box">
+                <h3>Examples of Web Browsers</h3>
+                <p>
+                    Google Chrome, Mozilla Firefox, Microsoft Edge and Safari
+                    are examples of commonly used web browsers.
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Topic 11 -->
+        <article class="topic-section">
+
+            <h2>11. Web Servers</h2>
+
+            <h3>Definition</h3>
+
+            <p>
+                A web server is a system that stores website files and provides
+                web pages to users when they request them through a browser.
+            </p>
+
+            <p>
+                When a browser requests a web page, the web server receives the
+                request, finds the required resource and sends a response back
+                to the browser.
+            </p>
+
+            <h3>Functions of a Web Server</h3>
+
+            <ul>
+                <li>Stores website files and resources.</li>
+                <li>Receives requests from web browsers.</li>
+                <li>Processes client requests.</li>
+                <li>Sends web pages and other resources as responses.</li>
+                <li>Supports web applications and online services.</li>
+            </ul>
+
+            <h3>Web Server Working</h3>
+
+            <div class="example-box">
+                <p>
+                    User → Web Browser → HTTP Request → Web Server<br><br>
+                    Web Server → HTTP Response → Web Browser → User
+                </p>
+            </div>
+
+        </article>
+
+
+        <!-- Summary -->
+        <article class="summary-section">
+
+            <h2>📌 Unit 1 Summary</h2>
+
+            <p>
+                In this unit, we learned the basic concepts of the Internet and
+                the World Wide Web. HTML provides the structure for web pages,
+                while protocols such as HTTP help browsers and servers
+                communicate.
+            </p>
+
+            <p>
+                Email communication uses protocols such as SMTP, POP3 and IMAP.
+                MIME supports different types of content in email messages.
+                DNS converts domain names into IP addresses, while web browsers
+                and web servers work together to deliver websites to users.
+            </p>
+
+        </article>
+
+
+        <!-- Important Questions -->
+        <article class="important-questions">
+
+            <h2>📝 Important Questions</h2>
+
+            <ol>
+                <li>Explain the history and development of the Internet.</li>
+                <li>What is the World Wide Web? Explain how it works.</li>
+                <li>What is HTML? Explain the basic structure of an HTML document.</li>
+                <li>Explain HTTP and the request-response model.</li>
+                <li>What is SMTP? Explain its role in email communication.</li>
+                <li>Explain POP3 and IMAP. Compare their basic functions.</li>
+                <li>What is MIME? Explain its uses.</li>
+                <li>Explain the working of the Domain Name System.</li>
+                <li>What is a web browser? Explain its functions.</li>
+                <li>What is a web server? Explain how it works.</li>
+            </ol>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebLearn | Web Technology Learning Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

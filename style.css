@@ -1,0 +1,698 @@
+/* =========================================
+   WEBLEARN - COMPLETE STYLE SHEET
+   Dark Green & Sage Green Theme
+========================================= */
+
+
+/* =========================================
+   1. GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E6E6;
+    color: #404E3B;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   2. NAVIGATION BAR
+========================================= */
+
+nav {
+    width: 100%;
+    background-color: #404E3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    box-shadow: 0 3px 12px rgba(64, 78, 59, 0.25);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #7B9669;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   3. HOME PAGE
+========================================= */
+
+.home {
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #E6E6E6, #BAC8B1);
+}
+
+.home-content {
+    max-width: 850px;
+}
+
+.small-title {
+    color: #404E3B;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.home-content h1 {
+    color: #404E3B;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.home-content p:not(.small-title) {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    color: #4f5d4b;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   4. BUTTONS
+========================================= */
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.note-btn,
+.back-btn,
+.btn {
+    display: inline-block;
+    padding: 13px 27px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-btn,
+.note-btn,
+.back-btn,
+.btn {
+    background-color: #404E3B;
+    color: #ffffff;
+    border: 2px solid #404E3B;
+}
+
+.primary-btn:hover,
+.note-btn:hover,
+.back-btn:hover,
+.btn:hover {
+    background-color: #7B9669;
+    border-color: #7B9669;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(64, 78, 59, 0.2);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #404E3B;
+    border: 2px solid #404E3B;
+}
+
+.secondary-btn:hover {
+    background-color: #404E3B;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   5. FEATURES SECTION
+========================================= */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #404E3B;
+    font-size: 38px;
+}
+
+.card-container,
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 350px;
+    min-height: 275px;
+    padding: 35px 30px;
+    background-color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 14px;
+    border: 1px solid #BAC8B1;
+    box-shadow: 0 6px 20px rgba(64, 78, 59, 0.12);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(64, 78, 59, 0.2);
+    border-color: #7B9669;
+}
+
+.feature-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BAC8B1;
+    border-radius: 12px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #404E3B;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #5c6758;
+    margin-bottom: 20px;
+}
+
+.feature-card span {
+    color: #404E3B;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   6. LOGIN PAGE
+========================================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #404E3B, #6C8480);
+}
+
+.login-box {
+    width: 420px;
+    max-width: 100%;
+    padding: 45px 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+    color: #404E3B;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.login-box p {
+    color: #6b7568;
+    margin-bottom: 28px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #BAC8B1;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #7B9669;
+    box-shadow: 0 0 0 3px rgba(123, 150, 105, 0.15);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #404E3B;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #7B9669;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   7. PAGE TITLES
+========================================= */
+
+.page-title {
+    text-align: center;
+    color: #404E3B;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.page-description {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #5c6758;
+}
+
+
+/* =========================================
+   8. SYLLABUS PAGE
+========================================= */
+
+.syllabus-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.unit-card {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #7B9669;
+    box-shadow: 0 5px 18px rgba(64, 78, 59, 0.08);
+    transition: 0.3s;
+}
+
+.unit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(64, 78, 59, 0.14);
+}
+
+.unit-card h2 {
+    color: #404E3B;
+    margin-bottom: 15px;
+}
+
+.unit-card ul {
+    padding-left: 25px;
+}
+
+.unit-card li {
+    color: #5c6758;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   9. NOTES MAIN PAGE
+========================================= */
+
+.notes-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+.note-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #BAC8B1;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(64, 78, 59, 0.1);
+    transition: 0.3s;
+}
+
+.note-card:hover {
+    transform: translateY(-7px);
+    border-color: #7B9669;
+    box-shadow: 0 14px 28px rgba(64, 78, 59, 0.16);
+}
+
+.note-card h2 {
+    color: #404E3B;
+    margin-bottom: 14px;
+}
+
+.note-card p {
+    color: #5c6758;
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   10. UNIT NOTES PAGES
+========================================= */
+
+.unit-header {
+    padding: 75px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #BAC8B1, #E6E6E6);
+}
+
+.unit-header h1 {
+    color: #404E3B;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.unit-header p {
+    max-width: 750px;
+    margin: auto;
+    color: #4f5d4b;
+    font-size: 17px;
+}
+
+.unit-header .back-btn {
+    margin-top: 25px;
+}
+
+.notes-content {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 0 20px;
+}
+
+.topic-section {
+    background-color: #ffffff;
+    padding: 32px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #BAC8B1;
+    box-shadow: 0 4px 15px rgba(64, 78, 59, 0.08);
+}
+
+.topic-section h2 {
+    color: #404E3B;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #BAC8B1;
+}
+
+.topic-section h3 {
+    color: #6C8480;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.topic-section p {
+    color: #4f5d4b;
+    margin-bottom: 15px;
+}
+
+.topic-section ul,
+.topic-section ol {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.topic-section li {
+    color: #4f5d4b;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   11. CODE AND EXAMPLE BOXES
+========================================= */
+
+.code-box {
+    background-color: #404E3B;
+    color: #ffffff;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.example-box {
+    background-color: #E6E6E6;
+    border-left: 5px solid #7B9669;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.example-box h3 {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   12. SUMMARY AND QUESTIONS
+========================================= */
+
+.summary-section {
+    background-color: #BAC8B1;
+    padding: 32px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.summary-section h2 {
+    color: #404E3B;
+    margin-bottom: 15px;
+}
+
+.summary-section p {
+    color: #404E3B;
+    margin-bottom: 12px;
+}
+
+.important-questions {
+    background-color: #ffffff;
+    padding: 32px;
+    margin-bottom: 30px;
+    border: 2px solid #7B9669;
+    border-radius: 12px;
+}
+
+.important-questions h2 {
+    color: #404E3B;
+    margin-bottom: 20px;
+}
+
+.important-questions ol {
+    padding-left: 25px;
+}
+
+.important-questions li {
+    color: #4f5d4b;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   13. FEEDBACK PAGE
+========================================= */
+
+.feedback-section {
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 45px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 7px 25px rgba(64, 78, 59, 0.12);
+}
+
+.feedback-section h1 {
+    color: #404E3B;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    color: #5c6758;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.feedback-section input,
+.feedback-section textarea,
+.feedback-section select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #BAC8B1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.feedback-section input:focus,
+.feedback-section textarea:focus,
+.feedback-section select:focus {
+    outline: none;
+    border-color: #7B9669;
+    box-shadow: 0 0 0 3px rgba(123, 150, 105, 0.15);
+}
+
+.feedback-section textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.feedback-section button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #404E3B;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-section button:hover {
+    background-color: #7B9669;
+}
+
+
+/* =========================================
+   14. FOOTER
+========================================= */
+
+footer {
+    background-color: #404E3B;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   15. MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .home {
+        min-height: 470px;
+        padding: 60px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content p:not(.small-title) {
+        font-size: 16px;
+    }
+
+    .section-title h2,
+    .page-title {
+        font-size: 30px;
+    }
+
+    .unit-header h1 {
+        font-size: 32px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .topic-section {
+        padding: 22px;
+    }
+
+    .feedback-section {
+        margin: 40px 15px;
+        padding: 30px 20px;
+    }
+}
